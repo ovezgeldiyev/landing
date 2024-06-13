@@ -1,0 +1,51 @@
+.terms {
+  padding: 50px 0 100px;
+  &__inner {
+    &-title {
+      margin-bottom: 30px;
+    }
+    &-article {
+        max-width: 1250px;
+        h6 {
+            color: $black;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        p {
+            color: $black;
+            font-weight: 400;
+            margin-bottom: 30px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    .pageNav {
+      a {
+        color: $black;
+        font-weight: 400;
+      }
+      p {
+        color: $black;
+        font-weight: 600;
+      }
+    }
+    h2 {
+      color: $black;
+    }
+  }
+}
+// 540px
+@mixin terms-xsm-sm {
+    .terms {
+        padding: 35px 0 80px;
+        &__inner {
+            &-article {
+                h6 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+  }
+  

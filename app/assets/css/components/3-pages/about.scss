@@ -1,0 +1,352 @@
+.location {
+  background-color: #f7f9ff;
+  padding: 86px 0 100px;
+  .auto__container {
+    max-width: 1015px;
+  }
+  &__inner {
+    &-title {
+      text-align: center;
+      max-width: 895px;
+      margin: 0 auto 100px;
+    }
+    &-map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+}
+// 1180px
+@mixin location-xlg-xxlg {
+  .location {
+  }
+}
+// 1024px
+@mixin location-lg-xlg {
+  .location {
+    padding: 70px 0;
+    &__inner {
+      &-title {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+// 840px
+@mixin location-md-lg-extra {
+  .location {
+  }
+}
+// 750px
+@mixin location-sm-md {
+  .location {
+    padding: 45px 0 0;
+    &__inner {
+      &-title {
+        margin-bottom: 45px;
+      }
+      &-map {
+        overflow: hidden;
+        margin: 0 -20px -70px;
+        width: calc(100% + 40px);
+        img {
+          min-width: 1430px;
+          transform: translate(-12%, 0);
+        }
+      }
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+// 650px
+@mixin location-sm-md-extra {
+  .location {
+  }
+}
+// 540px
+@mixin location-xsm-sm {
+  .location {
+  }
+}
+.values {
+  background-color: #f7f9ff;
+  padding: 90px 0;
+  &__inner {
+    &-title {
+      max-width: 1060px;
+      margin-bottom: 36px;
+    }
+    &-slider {
+      margin: 0 -15px;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .slick {
+      &-list {
+        overflow: visible !important;
+      }
+      &-track {
+        display: flex !important;
+      }
+      &-slide {
+        display: flex !important;
+        height: unset !important;
+        & > div {
+          display: flex;
+        }
+      }
+      &-dots {
+        display: none;
+      }
+    }
+  }
+  &Item {
+    border-radius: 10px;
+    background-color: $white;
+    padding: 36px 20px;
+    margin: 0 15px;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    &__icon {
+      width: 54px;
+      height: 54px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary;
+      margin-bottom: 30px;
+      border-radius: 13px;
+      img {
+        width: 100%;
+      }
+    }
+    h5 {
+      color: $black;
+      margin-bottom: 20px;
+    }
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 400;
+      color: #3c4054;
+    }
+  }
+}
+// 1180px
+@mixin values-xlg-xxlg {
+  .values {
+    padding: 70px 0;
+    &__inner {
+      &-title {
+        margin-bottom: 24px;
+      }
+      &-slider {
+        margin: 0 -10px;
+      }
+    }
+    &Item {
+      padding: 30px 20px;
+      margin: 0 10px;
+      &__icon {
+        margin-bottom: 20px;
+      }
+      h5 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin values-lg-xlg {
+  .values {
+  }
+}
+// 840px
+@mixin values-md-lg-extra {
+  .values {
+    &__inner {
+      &-slider {
+        margin: 0 -7px;
+      }
+    }
+    &Item {
+      margin: 0 7px;
+    }
+  }
+}
+// 750px
+@mixin values-sm-md {
+  .values {
+  }
+}
+// 650px
+@mixin values-sm-md-extra {
+  .values {
+  }
+}
+// 540px
+@mixin values-xsm-sm {
+  .values {
+    padding: 45px 0;
+    &__inner {
+      &-title {
+        text-align: center;
+      }
+      &-slider {
+        margin: 0 -11px;
+        padding-bottom: 45px;
+      }
+      .slick {
+        &-list {
+          overflow: visible !important;
+          max-width: 362px !important;
+        }
+        &-dots {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          box-sizing: border-box;
+          li {
+            width: 15px;
+            height: 15px;
+            margin: 0 10px 0 0;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            &.slick-active {
+              width: 93px;
+              button {
+                background-color: $primary;
+              }
+            }
+            &:last-child {
+              margin: 0;
+            }
+            button {
+              width: 100%;
+              height: 100%;
+              background-color: rgba($primary, 0.5);
+              transition: 0.3s ease;
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    &Item {
+      margin: 0 11px;
+      min-height: 300px;
+      padding: 40px 30px;
+    }
+  }
+}
+.facts {
+  padding: 45px 0;
+  &.mobAdd {
+    display: none;
+  }
+  &__inner {
+    &-title {
+      text-align: center;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:last-child {
+        margin: 0;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 24px;
+      }
+    }
+    &-row {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+    &-link {
+      display: block;
+      font-weight: 600;
+      position: relative;
+      color: #3578e2;
+      line-height: 100%;
+      padding: 15px 32px 15px 20px;
+      border-radius: 50px;
+      border: 1px solid #3578e2;
+      &:hover {
+        opacity: 1;
+        svg {
+          transform: translate(50%, -50%);
+        }
+      }
+      svg {
+        position: absolute;
+        top: 17px;
+        right: 17px;
+        width: 7px;
+        height: 7px;
+        color: #3578e2;
+        transition: 0.3s ease;
+      }
+    }
+  }
+  &Item {
+    background: #f7f9ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 65px 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    &:last-child {
+      margin: 0;
+    }
+    h3 {
+      font-size: 65px;
+      line-height: 100%;
+      color: #4b87e5;
+      margin-bottom: 30px;
+      font-weight: 800;
+    }
+    h6 {
+      color: $black;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+}
+// 540px
+@mixin facts-xsm-sm {
+  .facts {
+    &.mobAdd {
+      display: block;
+    }
+  }
+}

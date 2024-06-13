@@ -1,0 +1,302 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  // home
+  .main {
+    &.sm {
+      padding-top: 70px;
+    }
+  }
+  h1 {
+    &.big {
+      font-size: 60px;
+    }
+  }
+  h2 {
+    &.ex {
+      font-size: 60px;
+    }
+  }
+  @include showcase-xxxlg-xxxxlg;
+  @include nav2-xxxlg-xxxxlg;
+  @include header2-xxxlg-xxxxlg;
+  // vacancy
+  @include intro-xxxlg-xxxxlg;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  // home
+  h1 {
+    &.big {
+      font-size: 55px;
+    }
+  }
+  h2 {
+    &.big {
+      font-size: 38px;
+    }
+    &.ex {
+      font-size: 50px;
+    }
+  }
+  @include showcase-xlg-xxlg;
+  @include testimonial-xlg-xxlg;
+  @include touch-xlg-xxlg;
+  @include footer-xlg-xxlg;
+  @include work-xlg-xxlg;
+  @include offer-xlg-xxlg;
+  @include market-xlg-xxlg;
+
+  // overview
+  @include overview-xlg-xxlg;
+  // contact
+  @include challange-xlg-xxlg;
+  @include office-xlg-xxlg;
+  // about
+  @include values-xlg-xxlg;
+  // vacancy
+  @include benefits-xlg-xxlg;
+  // case
+  @include results-xlg-xxlg;
+  @include solution-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 30px;
+    &.big {
+      font-size: 33px;
+    }
+    &.ex {
+      font-size: 45px;
+    }
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .main {
+    &.sm {
+      padding-top: 62px;
+    }
+  }
+  .switch {
+    &__row {
+      margin-right: 20px;
+    }
+  }
+  // home
+
+  @include showcase-lg-xlg;
+  @include testimonial-lg-xlg;
+  @include quest-lg-xlg;
+  @include work-lg-xlg;
+  @include offer-lg-xlg;
+  @include header2-lg-xlg;
+  @include nav2-lg-xlg;
+  @include footer-lg-xlg;
+  @include market-lg-xlg;
+
+  // overview
+  @include growth-lg-xlg;
+  @include help-lg-xlg;
+  @include overview-lg-xlg;
+  @include opportunity-lg-xlg;
+  // contact
+  @include challange-lg-xlg;
+  @include office-lg-xlg;
+  // about {
+  @include location-lg-xlg;
+  // case
+  @include case-lg-xlg;
+  // vacancy
+  @include benefits-lg-xlg;
+  @include intro-lg-xlg;
+}
+// 930px
+@include md-lg {
+  // home
+  h1 {
+    &.big {
+      font-size: 50px;
+    }
+  }
+  h2 {
+    &.ex {
+      font-size: 40px;
+    }
+  }
+  @include testimonial-md-lg;
+  @include footer-md-lg;
+  @include touch-md-lg;
+
+  // overview
+  @include overview-md-lg;
+  @include opportunity-md-lg;
+  // case
+  @include results-md-lg;
+  @include solution-md-lg;
+}
+// 840px
+@include md-lg-extra {
+  .switch {
+    height: 20px;
+    width: 40px;
+    label {
+      &::before {
+        width: 14px;
+        height: 14px;
+      }
+    }
+    input {
+      &:checked + label {
+        &::before {
+          left: 22px;
+        }
+      }
+    }
+  }
+
+  // home
+  .button {
+    &.big {
+      padding: 13px 35px;
+    }
+  }
+  @include showcase-md-lg-extra;
+  @include testimonial-md-lg-extra;
+  @include quest-md-lg-extra;
+  @include touch-md-lg-extra;
+  @include offer-md-lg-extra;
+  @include market-md-lg-extra;
+  @include opportunity-md-lg-extra;
+  // contact
+  @include challange-md-lg-extra;
+  @include office-md-lg-extra;
+  // about
+  @include values-md-lg-extra;
+  // case
+  @include case-md-lg-extra;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 22px;
+  }
+
+  // home
+  h1 {
+    &.big {
+      font-size: 40px;
+    }
+  }
+  h2 {
+    &.big {
+      font-size: 26px;
+    }
+  }
+  @include footer-sm-md;
+  @include showcase-sm-md;
+  @include market-sm-md;
+  // about
+  @include location-sm-md;
+  // vacancy
+  @include benefits-sm-md;
+  @include apply-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  // home
+  @include showcase-sm-md-extra;
+  @include testimonial-sm-md-extra;
+  @include market-sm-md-extra;
+  main {
+    padding-top: 58px;
+  }
+  // overview
+  @include opportunity-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  // home
+  h1 {
+    &.big {
+      font-size: 32px;
+    }
+  }
+  p {
+    font-weight: 400;
+  }
+  .switch {
+    &__row {
+      margin-right: 10px;
+    }
+  }
+  .burger.last {
+    margin-left: 10px;
+  }
+  .main {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      .location {
+        order: -1;
+        z-index: 1;
+        position: relative;
+      }
+      .testimonial {
+        z-index: 2;
+        order: 2;
+        position: relative;
+      }
+    }
+  }
+  @include showcase-xsm-sm;
+  @include testimonial-xsm-sm;
+  @include quest-xsm-sm;
+  @include footer-xsm-sm;
+  @include work-xsm-sm;
+  @include offer-xsm-sm;
+  @include market-xsm-sm;
+
+  // overview
+  @include growth-xsm-sm;
+  @include help-xsm-sm;
+  @include overview-xsm-sm;
+  @include touch-xsm-sm;
+  // about
+  @include values-xsm-sm;
+  @include facts-xsm-sm;
+  // vacancy
+  @include apply-xsm-sm;
+  @include intro-xsm-sm;
+  // case
+  @include results-xsm-sm;
+  @include solution-xsm-sm;
+
+  @include terms-xsm-sm;
+
+}
+// 440px
+@include xxsm-xsm {
+}
+// 390px
+@include xxxsm-xxsm {
+  // overview
+  @include help-xxxsm-xxsm;
+  @include touch-xxxsm-xxsm;
+  // contact
+  @include challange-xxxsm-xxsm;
+  // vacancy
+  @include benefits-xxxsm-xxsm;
+}
